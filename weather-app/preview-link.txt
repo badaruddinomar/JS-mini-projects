@@ -1,0 +1,1 @@
+project-preview-link: https://weather-app-search-city.netlify.app/
