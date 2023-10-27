@@ -1,0 +1,88 @@
+/* Common css stylings starts from here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  /* width: 100vw; */
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Common css stylings ends here */
+.slider {
+  padding: 20px;
+  display: flex;
+
+  width: 900px;
+  position: relative;
+}
+.slider .slides {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin: 0 3rem;
+  margin-top: 5rem;
+  overflow-x: auto;
+  float: left;
+}
+.slider .slides img {
+  width: 300px;
+  height: 100%;
+  background: red;
+  display: block;
+  margin: 0 0.5rem;
+  object-fit: cover;
+  cursor: all-scroll;
+}
+.slider .slides::-webkit-scrollbar {
+  display: none;
+}
+.slider .right-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background: gray;
+  transition: all 0.23s;
+}
+.slider .right-btn:hover {
+  opacity: 0.5;
+}
+.slider .left-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background: gray;
+  transition: all 0.23s;
+}
+.slider .left-btn:hover {
+  opacity: 0.5;
+}
