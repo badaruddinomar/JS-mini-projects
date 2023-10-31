@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.toast {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  background: cornsilk;
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: all 0.23s;
+  transform: translateX(120%);
+}
+.toast.success {
+  border-left: 4px solid greenyellow;
+  border-bottom: 4px solid greenyellow;
+  transform: translateX(0%);
+}
+.toast.error {
+  border-left: 4px solid red;
+  border-bottom: 4px solid red;
+  transform: translateX(0%);
+}
+.toast.warning {
+  border-left: 4px solid yellow;
+  border-bottom: 4px solid yellow;
+  transform: translateX(0%);
+}
+button {
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: all 0.23s;
+}
+button:hover {
+  opacity: 0.8;
+  transform: translateY(2px);
+}
+.success-btn {
+  background-color: greenyellow;
+}
+.error-btn {
+  background-color: tomato;
+}
+.warning-btn {
+  background-color: yellow;
+}
